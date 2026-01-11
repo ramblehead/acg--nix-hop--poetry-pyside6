@@ -1,0 +1,5 @@
+if [[ "$PWD" == "$OLDPWD" ]]; then
+  use flake
+else
+  echo "direnv: blocking load because you entered via a symlink" >&2
+fi
